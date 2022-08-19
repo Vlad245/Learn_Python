@@ -62,3 +62,19 @@ for key in A:
 A = dict(zip('abcdef', list(range(6))))
 for key, val in A.items():
     print(key, val)
+
+def liverpool(number):
+    team = dict()
+
+    team[1] = 'Allison Becker'
+    team[4] = 'Virgil van Dijk'
+    team[66] = 'Trent Alexander-Arnold'
+    team[6] = 'Tiago Alcantara'
+    team[23] = 'Luis Diaz'
+    team[11] = 'Mohhamad Salah'
+
+    return team.get(number)
+
+number = int(input())
+
+print(liverpool(number))
